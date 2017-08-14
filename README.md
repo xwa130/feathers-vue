@@ -8,31 +8,30 @@
 ### Install
 
 ``` bash
-npm install vue-feathers --save
+npm install feathers-vue --save
 ```
 
 ### Usage
 
 ``` js
 // Include and set up feathers client
-const Feathers = require('feathers/client')
-const hooks = require('feathers-hooks')
-const authentication = require('feathers-authentication/client')
-const socketio = require('feathers-socketio/client')
-const io = require('socket.io-client')
+const feathers = require('feathers/client');
+const hooks = require('feathers-hooks');
+const authentication = require('feathers-authentication/client');
+const socketio = require('feathers-socketio/client');
+const io = require('socket.io-client');
 
-const socket = io('http://localhost:3030/')
-const feathers = Feathers()
-.configure(socketio(socket))
-.configure(hooks())
-.configure(authentication({storage: window.localStorage}))
+const client = feathers()
+  .configure(socketio(io('http://localhost:3030/')))
+  .configure(hooks())
+  .configure(authentication({storage: window.localStorage}));
 
 // Include it as a CommonJS module
-const Vue = require('vue')
-const vueFeathers = require('vue-feathers')
+const Vue = require('vue');
+const vueFeathers = require('feathers-vue');
 
 // And plug it in
-Vue.use(vueFeathers, feathers)
+Vue.use(vueFeathers, client)
 ```
 
 Now in every component you get a new property called `$services`, which allows you to interact with all of your Feathers services:
