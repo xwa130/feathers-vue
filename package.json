@@ -1,22 +1,26 @@
 {
-  "name": "vue-feathers",
+  "name": "feathers-vue",
   "version": "0.1.0",
   "description": "Integration with the Feathers framework for Vue.js",
-  "main": "vue-feathers.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunabozu/vue-feathers.git"
-  },
+  "homepage": "https://github.com/xwa130/feathers-vue#readme",
+  "main": "lib/",
   "keywords": [
     "vue",
-    "feathers"
+    "feathers",
+    "vue-plugin"
   ],
-  "author": "troorl <troorl@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sunabozu/vue-feathers/issues"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xwa130/feathers-vue.git"
   },
-  "homepage": "https://github.com/sunabozu/vue-feathers#readme",
+  "author": [
+    {"email": "Xinyi <xwa130@sfu.ca>"},
+    {"email": "troorl <troorl@gmail.com>"}
+  ],
+  "bugs": {
+    "url": "https://github.com/xwa130/feathers-vue/issues"
+  },
   "dependencies": {
     "feathers": "*"
   },
