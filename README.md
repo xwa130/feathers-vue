@@ -1,4 +1,4 @@
-# vue-feathers
+# feathers-vue
 
 > [Feathers](http://feathersjs.com/) is a minimalist real-time web framework written in JavaScript. 
 > Vue-Feathers is a plugin for Vue.js that integrates it with Feathers.
