@@ -15,14 +15,18 @@
     "url": "git://github.com/xwa130/feathers-vue.git"
   },
   "author": [
-    {"email": "Xinyi <xwa130@sfu.ca>"},
-    {"email": "troorl <troorl@gmail.com>"}
+    {
+      "email": "Xinyi <xwa130@sfu.ca>"
+    },
+    {
+      "email": "troorl <troorl@gmail.com>"
+    }
   ],
   "bugs": {
     "url": "https://github.com/xwa130/feathers-vue/issues"
   },
-  "dependencies": {
-    "feathers": "*"
-  },
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  }
 }
