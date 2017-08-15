@@ -26,10 +26,11 @@
     "url": "https://github.com/xwa130/feathers-vue/issues"
   },
   "scripts": {
-    "compile": "babel src -d lib"
+    "compile": "shx rm -rf lib/ && babel src -d lib"
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.24.1"
+    "babel-cli": "^6.24.1",
+    "shx": "^0.2.2"
   }
 }
