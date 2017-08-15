@@ -1,7 +1,7 @@
 # feathers-vue
 
 > [Feathers](http://feathersjs.com/) is a minimalist real-time web framework written in JavaScript. 
-> Vue-Feathers is a plugin for Vue.js that integrates it with Feathers.
+> Feathers-Vue is a plugin for Vue.js that integrates it with Feathers.
 
 **NOTE:** It's supposed to be compatible both with Vue 1.x and 2.x. It requires IE9+ or Safari 5+
 
@@ -23,15 +23,14 @@ const io = require('socket.io-client');
 
 const client = feathers()
   .configure(socketio(io('http://localhost:3030/')))
-  .configure(hooks())
-  .configure(authentication({storage: window.localStorage}));
+  .configure(hooks());
 
 // Include it as a CommonJS module
 const Vue = require('vue');
-const vueFeathers = require('feathers-vue');
+const feathersVue = require('feathers-vue');
 
 // And plug it in
-Vue.use(vueFeathers, client)
+Vue.use(feathersVue, client)
 ```
 
 Now in every component you get a new property called `$services`, which allows you to interact with all of your Feathers services:
@@ -72,7 +71,7 @@ export default {
 }
 ```
 
-Vue-feathers does all the clean up before your component is destroyed (using the `removeListener` function).
+feathers-vue does all the clean up before your component is destroyed (using the `removeListener` function).
 
 In case you need to do something more complex, there is a `$feathers` property for that:
 
