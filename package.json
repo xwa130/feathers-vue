@@ -25,6 +25,9 @@
   "bugs": {
     "url": "https://github.com/xwa130/feathers-vue/issues"
   },
+  "scripts": {
+    "compile": "babel src -d lib"
+  },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1"
