@@ -3,3 +3,5 @@ sudo: false
 language: node_js
 node_js:
   - 'node'
+notifications:
+  email: false
