@@ -17,7 +17,6 @@ npm install feathers-vue --save
 // Include and set up feathers client
 const feathers = require('feathers/client');
 const hooks = require('feathers-hooks');
-const authentication = require('feathers-authentication/client');
 const socketio = require('feathers-socketio/client');
 const io = require('socket.io-client');
 
