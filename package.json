@@ -26,6 +26,7 @@
     "url": "https://github.com/xwa130/feathers-vue/issues"
   },
   "scripts": {
+    "prepublish": "npm run compile",
     "compile": "shx rm -rf lib/ && babel src -d lib"
   },
   "dependencies": {},
